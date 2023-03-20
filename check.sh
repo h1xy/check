@@ -24,11 +24,11 @@ function About() {
 
 function Install_oth(){
     if [ -f "/usr/bin/apt-get" ]; then
-        apt-get update -y
+//        apt-get update -y
         apt-get install -y wget curl tar unzip
     else
-        yum update -y
-        yum install -y epel-release
+//        yum update -y
+//        yum install -y epel-release
         yum install -y wget curl tar unzip
     fi
 }
